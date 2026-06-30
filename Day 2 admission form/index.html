@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>SKIT COLLEGE ADMISSION FORM</h1>
+    <p class="sub">Swami Keshvanand Institute of Technology</p>
+
+    <form>
+
+       
+        <h2>Personal Details</h2>
+
+        <div class="row">
+            <input type="text" placeholder="Full Name" required>
+            <input type="date" required>
+        </div>
+
+        <div class="row">
+            <select required>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <input type="tel" placeholder="Mobile Number" required>
+        </div>
+
+        <input type="email" placeholder="Email Address" required>
+
+        
+        <h2>Academic Details</h2>
+
+        <div class="row">
+            <input type="text" placeholder="10th Percentage" required>
+            <input type="text" placeholder="12th Percentage" required>
+        </div>
+
+        <input type="text" placeholder="School Name" required>
+
+        
+        <h2>Course Selection</h2>
+
+        <select required>
+            <option>Select Course</option>
+            <option>B.Tech CSE</option>
+            <option>B.Tech IT</option>
+            <option>B.Tech ECE</option>
+            <option>MBA</option>
+        </select>
+
+       
+        <h2>Address</h2>
+
+        <textarea placeholder="Full Address" required></textarea>
+
+        <div class="row">
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="State" required>
+        </div>
+
+        <input type="text" placeholder="Pincode" required>
+
+      
+        <h2>Upload Documents</h2>
+
+        <input type="file">
+
+       
+        <button id="Btn" type="submit">Submit Application</button>
+
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
