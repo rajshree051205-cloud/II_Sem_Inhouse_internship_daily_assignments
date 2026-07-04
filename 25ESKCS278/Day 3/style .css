@@ -1,0 +1,90 @@
+/* ===== GENERAL CARD STYLE ===== */
+.card {
+    border: 2px solid #e9ecef;
+    border-radius: 18px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    background: #fff;
+}
+
+/* ===== HOVER EFFECT (ALL CARDS) ===== */
+.card:hover {
+    transform: translateY(-12px);
+    border-color: #0d6efd;
+    box-shadow: 0 15px 40px rgba(13, 110, 253, 0.25);
+}
+
+/* ===== PRICING TITLE ===== */
+h2, h3 {
+    font-weight: 700;
+}
+
+/* ===== PRICE TEXT ===== */
+.card h2 {
+    font-size: 2rem;
+}
+
+.card h2 span {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* ===== LIST STYLE ===== */
+.list-group-item {
+    border: none !important;
+    padding: 10px 0;
+    font-size: 0.95rem;
+}
+
+/* ===== BUTTON STYLE ===== */
+.btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.card:hover .btn {
+    transform: scale(1.05);
+}
+
+/* Primary button glow */
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #0b5ed7;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.3);
+}
+
+/* Outline button hover */
+.btn-outline-primary:hover {
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.25);
+}
+
+/* ===== "MOST POPULAR" BADGE ===== */
+.badge {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+/* ===== STANDARD CARD SPECIAL (CENTER CARD) ===== */
+.border-primary {
+    border: 2px solid #0d6efd !important;
+    transform: scale(1.05);
+}
+
+/* keep it slightly highlighted even normally */
+.border-primary:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+/* ===== SECTION BACKGROUND OPTIONAL ===== */
+section {
+    background: #f8f9fa;
+}

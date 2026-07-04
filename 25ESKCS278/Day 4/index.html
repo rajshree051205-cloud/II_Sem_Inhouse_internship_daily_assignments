@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Build Sprint — Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+<div class="card">
+  <div class="top-row">
+    <div>
+      <h1>Create your account</h1>
+      <p class="sub">Register for the Build Sprint lab.</p>
+    </div>
+    <button class="toggle-btn" id="themeToggle" type="button">🌙 Dark mode</button>
+  </div>
+
+  <div class="counter-bar">
+    <span>Form opened / interactions: <span id="countVal">0</span> times</span>
+    <div class="counter-actions">
+      <button type="button" id="countBtn">+1</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <form id="regForm" novalidate>
+    <label for="name">Full name</label>
+    <input type="text" id="name" placeholder="Jordan Lee">
+    <div class="error-msg" id="nameError"></div>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="you@example.com">
+    <div class="error-msg" id="emailError"></div>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="At least 8 characters">
+    <div class="error-msg" id="passwordError"></div>
+
+    <label for="confirm">Confirm password</label>
+    <input type="password" id="confirm" placeholder="Re-enter password">
+    <div class="error-msg" id="confirmError"></div>
+
+    <button type="submit" class="submit-btn">Register</button>
+    <div class="success-banner" id="successBanner">✅ Registration successful — welcome aboard!</div>
+  </form>
+
+  <footer class="note">No data leaves this page — it's all handled locally.</footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
