@@ -1,0 +1,31 @@
+-- ============================================================
+-- Student Data Collection & Management System — Database Schema
+-- ============================================================
+
+CREATE DATABASE IF NOT EXISTS student_management
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE student_management;
+
+CREATE TABLE IF NOT EXISTS students (
+    id                INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    admission_number  VARCHAR(20)  NOT NULL UNIQUE,
+    full_name         VARCHAR(100) NOT NULL,
+    email             VARCHAR(150) NOT NULL UNIQUE,
+    phone             VARCHAR(20)  NOT NULL,
+    date_of_birth     DATE         NOT NULL,
+    gender            ENUM('Male', 'Female', 'Other') NOT NULL,
+    course            VARCHAR(100) NOT NULL,
+    address           TEXT NULL,
+    created_at        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+                       ON UPDATE CURRENT_TIMESTAMP,
+
+    INDEX idx_full_name (full_name),
+    INDEX idx_course (course)
+) ENGINE=InnoDB;
+
+-- Optional: a couple of sample rows for testing the dashboard UI
+-- INSERT INTO students (admission_number, full_name, email, phone, date_of_birth, gender, course, address)
+-- VALUES ('STU2026A1B2C3', 'Aarav Sharma', 'aarav.sharma@example.com', '+91 98765 43210', '2005-04-12', 'Male', 'Computer Science', 'Jaipur, Rajasthan');
